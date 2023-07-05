@@ -1,8 +1,15 @@
 //your JS code here. If required.
-function getSize(){
-	 const w = document.documentElement.clientWidth;
-     const h = document.documentElement.clientHeight;
-
-	const elem = document.getElementById('sizeInfo');
-	elem.innerHTML="<h1> Width: "+w+" and Height: "+h+"</h1";
-}
+  let height=this.innerHeight;
+    let width=this.innerWidth;
+   let div=document.getElementById("sizeInfo");
+    let h=div.firstChild;
+    h.innerText="Width: "+width+" and Height: "+height;  
+window.addEventListener("resize",function(){
+    let height=this.innerHeight;
+    let width=this.innerWidth;
+   let div=document.getElementById("sizeInfo");
+    let h=div.firstChild;
+ 
+    h.innerText="Width: "+width+" and Height: "+height; 
+  
+  })
