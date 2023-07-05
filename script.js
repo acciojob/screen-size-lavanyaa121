@@ -12,4 +12,4 @@ window.addEventListener("resize",function(){
  
     h.innerText="Width: "+width+" and Height: "+height; 
   
-  })
+  });
